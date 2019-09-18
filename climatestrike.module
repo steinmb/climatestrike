@@ -1,0 +1,9 @@
+<?php
+
+function climatestrike_page_alter(&$page) {
+	$page['footer']['#attached']['js'][] = array(
+	  'type' => 'external',
+	  'data' => 'https://assets.digitalclimatestrike.net/widget.js',
+	 );
+}
+
